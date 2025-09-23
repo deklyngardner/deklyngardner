@@ -18,10 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
 
-  expandedView.addEventListener('click', (e) => {
-      if (e.target === expandedView) {
-          expandedView.style.display = 'none';
-          items.forEach(i => i.classList.remove('blur'));
-      }
+  expandedView.addEventListener('click', () => {
+    expandedView.style.display = 'none';
+    items.forEach(i => i.classList.remove('blur'));
   });
 });
