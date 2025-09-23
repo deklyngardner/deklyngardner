@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    top: 0;
+    height: 190px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.left,.right,.title {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.left img,.right img,.title img{
+    max-width: 100%;
+    max-height: 190px;
+    object-fit: contain;
+}
+
+.computer-img {
+    content: url("imgs/computerselect.png");
+}
+
+.computer:hover .computer-img {
+    content: url("imgs/computerhoverselect.png");
+}
+
+.sketchbook-img {
+    content: url("imgs/sketchbookselect.png");
+}
+
+.sketchbook:hover .sketchbook-img {
+    content: url("imgs/sketchbookhoverselect.png");
+}
+
+.title {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.title img {
+    max-width: 100%;
+    max-height: 190px;
+    object-fit: contain;
+}
+
+.b-bar {
+    height: 10px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 190px;
+    left: 0;
+    z-index: 100;
+  }
+
+.w-bar {
+    height: 10px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 200px;
+    left: 0;
+    z-index: 100;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 50px;
+    background-color: black;
+    margin-top: 210px;
+}
+  
+.portfolio-item {
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 30vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.item-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.item-text {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    padding-right: 15%;
+    transform: translateY(-50%);
+  
+    color: white;
+    font-size: 11px;
+    font-family: 'Gill Sans', sans-serif;
+    text-align:left;
+    line-height: 1.8;
+    
+  
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+.item-text b{
+    font-size: 18px;
+    }
+
+  .portfolio-item:hover img {
+    filter: blur(4px);
+    opacity: 0.4;
+  }
+
+  .portfolio-item:hover .item-text {
+    opacity: 1;
+  }
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+
+    background-color: white;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+
+    font-family: "Gill Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.footer .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.expanded-view {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.expanded-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 20;
+    transition: color 0.3s;
+}
+
+
+
+
+/* SMALL PAGE */
+@media all and (max-width: 850px) {
+
+.header {
+    height: 120px;
+}
+
+.title img {
+    max-height: 120px;
+}
+
+.b-bar {
+    top: 120px;
+  }
+
+.w-bar {
+    top: 130px;
+}
+
+.portfolio-grid {
+    margin-top: 140px;
+}
+
+.footer {
+    height: 25px;
+
+    font-size: 8px;
+    font-weight: 400;
+}
+
+}

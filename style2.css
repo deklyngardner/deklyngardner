@@ -1,0 +1,15 @@
+.computer-img {
+    content: url("imgs/computer.png");
+}
+
+.computer:hover .computer-img {
+    content: url("imgs/computerhover.png");
+}
+
+.sketchbook-img {
+    content: url("imgs/sketchbookselect.png");
+}
+
+.sketchbook:hover .sketchbook-img {
+    content: url("imgs/sketchbookhoverselect.png");
+}
