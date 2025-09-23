@@ -231,7 +231,7 @@ a {
 
 
 /* SMALL PAGE */
-@media all and (max-width: 850px) {
+@media all and (max-width: 700px) {
 
 .header {
     height: 120px;
