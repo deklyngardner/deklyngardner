@@ -3,12 +3,14 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    margin-top: 210px;
+    top: 210px;
+    bottom: 30px
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 0;
     z-index: -10;
     background-color: black;
+    overflow-y: auto;
 }
 
 .background-grid img {
@@ -20,10 +22,11 @@
 
 
 /* SMALL PAGE */
-@media all and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
 
 .background-grid {
-    margin-top: 140px;    
+    top: 140px;
+    bottom: 25px;
 }
     
 }
