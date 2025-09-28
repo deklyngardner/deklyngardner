@@ -22,11 +22,10 @@
 
 
 /* SMALL PAGE */
-@media only screen and (max-width: 450px) {
+@media all and (max-width: 450px) {
 
 .background-grid {
-    top: 140px;
-    bottom: 25px;
+    margin-top: 140px;
 }
     
 }
