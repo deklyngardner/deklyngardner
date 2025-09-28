@@ -9,9 +9,10 @@
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-auto-rows: 1fr;
     z-index: -10;
+    overflow: hidden;
 }
 
-.background-item {
+.background-image {
     background-size: cover;
     background-position: center;
     aspect-ratio: 1 / 1;
