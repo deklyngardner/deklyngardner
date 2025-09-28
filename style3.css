@@ -2,12 +2,12 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 200vw;
+    height: 200vh;
     margin-top: 210px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 100px);
-    grid-auto-rows: 100px;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-auto-rows: 200px;
     z-index: -10;
     overflow: hidden;
 }
@@ -15,6 +15,6 @@
 .background-image {
     background-size: cover;
     background-position: center;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
