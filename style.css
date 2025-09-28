@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 body, html {
@@ -234,7 +231,7 @@ a {
 
 
 /* SMALL PAGE */
-@media all (max-width: 450px) {
+@media all and (max-width: 850px) {
 
 .header {
     height: 120px;
@@ -256,15 +253,10 @@ a {
     margin-top: 140px;
 }
 
-.portfolio-item:hover .item-text {
-    opacity: 0;
-}
-
-
 .footer {
     height: 25px;
 
-    font-size: 6px;
+    font-size: 8px;
     font-weight: 400;
 }
 
