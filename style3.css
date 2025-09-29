@@ -18,3 +18,12 @@
     object-fit: cover;
     display: block;
 }
+
+/* SMALL PAGE */
+@media all and (max-width: 450px) {
+
+.background-grid {
+    margin-top: 140px;
+}
+
+}
