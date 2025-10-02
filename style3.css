@@ -29,9 +29,10 @@
   padding: 2rem;
   max-width: 90%;
   width: 600px;
-  z-index: 999; /* Above all content */
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  z-index: 1000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   font-family: "Gill Sans", sans-serif;
+  text-align: left;
 }
 
 .overlay-content h1 {
@@ -56,17 +57,16 @@
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
 }
 
-  .center-overlay {
-    padding: 1.5rem;
+.center-overlay {
+    padding: 1rem;
     width: 90%;
-  }
+}
 
-  .overlay-content h1 {
+.overlay-content h1 {
     font-size: 1.5rem;
-  }
+}
 
-  .overlay-content p {
+.overlay-content p {
     font-size: 0.95rem;
-  }
-
+    }
 }
