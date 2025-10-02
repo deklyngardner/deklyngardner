@@ -19,6 +19,33 @@
     display: block;
 }
 
+.center-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  max-width: 90%;
+  width: 600px;
+  z-index: 999; /* Above all content */
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  font-family: "Gill Sans", sans-serif;
+}
+
+.overlay-content h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.overlay-content p {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
 
 
 /* SMALL PAGE */
@@ -28,5 +55,18 @@
     margin-top: 140px;
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
 }
+
+  .center-overlay {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .overlay-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .overlay-content p {
+    font-size: 0.95rem;
+  }
 
 }
