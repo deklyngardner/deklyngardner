@@ -20,20 +20,24 @@
 }
 
 .bio-content {
-    position: fixed;
-    background-color: black;
-    color: white;
-    z-index: 10;
-    padding: 2rem;
-    max-width: 800px;
-    width: 100%;
-    border-radius: 8px;
-    box-sizing: border-box;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    text-align: left;
-    font-weight: normal;
-    line-height: 1.6;
-    font-size: clamp(1rem, 2.5vw, 1.25rem); /* responsive text size */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* perfect centering */
+
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  width: 90vw;              /* responsive width */
+  max-width: 800px;         /* don't exceed this width on large screens */
+  border-radius: 8px;       /* optional: rounded corners */
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* subtle shadow */
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: left;
+  line-height: 1.6;
+  font-size: clamp(1rem, 2.5vw, 1.25rem); /* responsive text size */
 }
 
 /* SMALL PAGE */
