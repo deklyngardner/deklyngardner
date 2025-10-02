@@ -19,6 +19,22 @@
     display: block;
 }
 
+.bio-content {
+    background-color: black;
+    color: white;
+    z-index: 10;
+    padding: 2rem;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.6;
+    font-size: clamp(1rem, 2.5vw, 1.25rem); /* responsive text size */
+}
+
 /* SMALL PAGE */
 @media all and (max-width: 450px) {
 
